@@ -1,0 +1,9 @@
+@use "maps" as maps;
+@use "sass:map";
+
+
+@mixin wrapper-media ($size) {
+    margin-left: auto;
+    margin-right: auto;
+    width: map.get(maps.$width, $size);
+}

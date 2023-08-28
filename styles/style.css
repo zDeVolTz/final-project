@@ -1,0 +1,351 @@
+@import "../styles/reset.css";
+@import "../fonts/stylesheet.css";
+.company-pride {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.services-link-tittle {
+  display: flex;
+  margin-bottom: 10px;
+}
+.services-link-tittle .link-style {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+}
+.services-link-tittle .link-style:after {
+  content: "";
+  background-image: url(../images/icons/Arrow-regular.png);
+  margin-left: 2px;
+  width: 12px;
+  height: 12px;
+}
+.services-link-tittle .link-style:hover {
+  color: #F0145A;
+}
+.services-link-tittle .link-style:hover::after {
+  content: "";
+  background-image: url(../images/icons/Arrow-hover.png);
+  margin-left: 2px;
+  width: 12px;
+  height: 12px;
+}
+
+.hero {
+  font-family: "Montserrat", sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  background-image: linear-gradient(118deg, #F0145A 0%, #EF8080 100%);
+  background-clip: padding-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cards-pride {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.cards-pride .card-pride {
+  width: 315px;
+}
+.cards-pride .card-pride .card-img {
+  padding: 14px;
+  border-radius: 24px;
+  background-color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.cards-pride .card-pride .card-tittle {
+  color: #24A3FF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.cards-pride .card-pride .card-text {
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.cards-pride .card-pride:last-child .card-img {
+  padding: 22px 22.5px;
+}
+
+@media (min-width: 768px) {
+  .cards-pride {
+    gap: 60px;
+  }
+  .cards-pride .card-pride {
+    width: 294px;
+  }
+}
+@media (min-width: 1024px) {
+  .cards-pride .card-pride {
+    width: 261px;
+  }
+}
+@media (min-width: 1440px) {
+  .cards-pride .card-pride {
+    width: 400px;
+  }
+}
+@media (min-width: 1920px) {
+  .cards-pride .card-pride {
+    width: 493px;
+  }
+}
+.shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.shadow .shadow-first {
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+.shadow .shadow-first:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 10px;
+  border-radius: 0px 0px 12px 12px;
+  background-color: #CACADB;
+}
+.shadow .shadow-second {
+  position: relative;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.shadow .shadow-second:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  border-radius: 0px 0px 12px 12px;
+  background-color: #E7E7F2;
+}
+
+.partner-company {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+.partner-company h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.partner-cards {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: 0;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.partner-cards .partner-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 375px;
+  height: 120px;
+}
+.partner-cards .partner-card:nth-child(1) {
+  background-color: #323264;
+  background-image: url("../images/Hillel-Logo-OneLine-White-Uk.png");
+  background-size: 217px 48px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.partner-cards .partner-card:nth-child(2) {
+  background: #143646;
+  background-image: url("../images/WannaBiz.png");
+  background-size: 200px 32px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.partner-cards .partner-card:nth-child(3) {
+  background: linear-gradient(0deg, #F48B30 0%, #F48B30 100%), #F48B30;
+  background-image: url("../images/tapgerine.png");
+  background-size: 179px 44px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.partner-cards .partner-card:nth-child(4) {
+  background-color: #9E4DC3;
+  background-image: url("../images/3D-LOOK.png");
+  background-size: 180px 42px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.partner-cards .partner-card:nth-child(5) {
+  background: #FD9339;
+  background-image: url("../images/orangear.png");
+  background-size: 174px 44px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.partner-cards .partner-card:nth-child(6) {
+  background: #E2E2E4;
+  background-image: url("../images/adtellingent.png");
+  background-size: 223px 48px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.partner-cards .partner-card:nth-child(7) {
+  display: none;
+}
+.partner-cards .partner-card:nth-child(8) {
+  display: none;
+}
+.partner-cards .partner-card:nth-child(9) {
+  display: none;
+}
+.partner-cards .partner-card:nth-child(10) {
+  display: none;
+}
+.partner-cards .partner-card:nth-child(11) {
+  display: none;
+}
+.partner-cards .partner-card:nth-child(12) {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .partner-cards .partner-card {
+    width: 256px;
+  }
+  .partner-cards .partner-card:nth-child(7) {
+    display: block;
+    background: #C71C36;
+    background-image: url("../images/Clickky.png");
+    background-size: 138px 61px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .partner-cards .partner-card:nth-child(8) {
+    display: block;
+    background: #DCF3F9;
+    background-image: url("../images/ecolease.png");
+    background-size: 146px 76px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .partner-cards .partner-card:nth-child(9) {
+    display: block;
+    background: #EAEAEA;
+    background-image: url("../images/Ifra-Tek.png");
+    background-size: 182px 60px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .partner-cards .partner-card:nth-child(10) {
+    display: block;
+    background: #282240;
+    background-image: url("../images/City-garden.png");
+    background-size: 181px 38px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .partner-cards .partner-card:nth-child(11) {
+    display: block;
+    background: #1D4568;
+    background-image: url("../images/art-print.png");
+    background-size: 189px 46px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .partner-cards .partner-card:nth-child(12) {
+    display: block;
+    background: #000;
+    background-image: url("../images/UltimeCard.png");
+    background-size: 152px 95px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 1024px) {
+  .partner-cards .partner-card {
+    width: 256px;
+  }
+}
+@media (min-width: 1440px) {
+  .partner-cards .partner-card {
+    width: 360px;
+  }
+}
+@media (min-width: 1920px) {
+  .partner-cards .partner-card {
+    width: 430px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+.main-header {
+  position: relative;
+  border-radius: 0px 0px 12px 12px;
+  background: linear-gradient(208deg, #323264 0%, #323264 59.9%, #643E72 100%);
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 315px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 648px;
+  }
+}
+@media (min-width: 1024px) {
+  .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 904px;
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1320px;
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

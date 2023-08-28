@@ -1,0 +1,46 @@
+@use "maps" as maps;
+@use "sass:map";
+@use "mixin" as mix;
+@use "company-pride" as *;
+@use "partner-company" as *;
+@import "../styles/reset.css";
+@import "../fonts/stylesheet.css";
+
+
+* {
+    box-sizing: border-box;
+}
+
+.main-header {
+    position: relative;
+    border-radius: 0px 0px 12px 12px;
+    background: linear-gradient(208deg, #323264 0%, #323264 59.90%, #643E72 100%);
+}
+
+.wrapper {
+    @include mix.wrapper-media("mob");
+}
+
+@media (min-width : map.get(maps.$min-width, "tabletSD")) {
+  .wrapper {
+    @include mix.wrapper-media("tabletSD");
+  }
+}
+
+@media (min-width : map.get(maps.$min-width, "tabletHD")) {
+    .wrapper {
+      @include mix.wrapper-media("tabletHD");
+    }
+}
+
+@media (min-width : map.get(maps.$min-width, "desktopSD")) {
+    .wrapper {
+      @include mix.wrapper-media("desktopSD");
+    }
+}
+
+@media (min-width : map.get(maps.$min-width, "desktopHD")) {
+    .wrapper {
+      @include mix.wrapper-media("desktopHD");
+    }
+}
