@@ -17,10 +17,6 @@
 
 .partner-cards {
     display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    flex-basis: 0;
-    flex-shrink: 0;
     flex-wrap: wrap;
     margin-top: 30px;
     width: map.get(maps.$width-partner-cards,"mob");
@@ -28,11 +24,7 @@
     margin-right: auto;
 
     .partner-card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 375px;
+        width: map.get(maps.$width-partner-card,"mob");
         height: 120px;
 
         
