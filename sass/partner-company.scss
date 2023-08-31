@@ -23,8 +23,9 @@
     flex-shrink: 0;
     flex-wrap: wrap;
     margin-top: 30px;
-    border-radius: 12px;
-    overflow: hidden;
+    width: map.get(maps.$width-partner-cards,"mob");
+    margin-left: auto;
+    margin-right: auto;
 
     .partner-card {
         display: flex;
@@ -111,6 +112,7 @@
 
 @media (min-width : map.get(maps.$min-width, "tabletSD")) {
     .partner-cards {
+        width: map.get(maps.$width-partner-cards,"tabletSD");
         .partner-card {
             width: map.get(maps.$width-partner-card,"tabletSD");
 
@@ -174,6 +176,7 @@
   
 @media (min-width : map.get(maps.$min-width, "tabletHD")) {
     .partner-cards {
+        width: map.get(maps.$width-partner-cards,"tabletHD");
         .partner-card {
             width: map.get(maps.$width-partner-card,"tabletHD");
         }
@@ -182,6 +185,7 @@
 
 @media (min-width : map.get(maps.$min-width, "desktopSD")) {
     .partner-cards {
+        width: map.get(maps.$width-partner-cards,"desktopSD");
         .partner-card {
             width: map.get(maps.$width-partner-card,"desktopSD");
         }
@@ -190,6 +194,9 @@
 
 @media (min-width : map.get(maps.$min-width, "desktopHD")) {
     .partner-cards {
+        width: map.get(maps.$width-partner-cards,"desktopHD");
+        border-radius: 12px;
+        overflow: hidden;
         .partner-card {
             width: map.get(maps.$width-partner-card,"desktopHD");
         }
