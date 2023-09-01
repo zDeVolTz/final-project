@@ -5,7 +5,7 @@
 }
 
 .services-link-tittle {
-  display: flex;
+  display: inline-block;
   margin-bottom: 10px;
 }
 .services-link-tittle .link-style {
@@ -58,17 +58,23 @@
   width: 315px;
 }
 .cards-pride .card-pride .card-img {
+  display: block;
   padding: 14px;
   border-radius: 24px;
   background-color: #FFFFFF;
   margin-bottom: 30px;
 }
 .cards-pride .card-pride .card-tittle {
+  display: inline-block;
+  text-decoration: none;
   color: #24A3FF;
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 30px;
+}
+.cards-pride .card-pride .card-tittle:hover {
+  color: #F0145A;
 }
 .cards-pride .card-pride .card-text {
   color: #FFF;

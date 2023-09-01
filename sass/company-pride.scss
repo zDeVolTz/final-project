@@ -6,7 +6,7 @@
 }
 
 .services-link-tittle {
-    display: flex;
+    display: inline-block;
     margin-bottom: 10px;
 
     .link-style {
@@ -64,6 +64,7 @@
         width: 315px;
 
         .card-img {
+            display: block;
             padding: 14px;
             border-radius: 24px;
             background-color: #FFFFFF;
@@ -71,11 +72,17 @@
         }
         
         .card-tittle {
+            display: inline-block;
+            text-decoration: none;
             color:#24A3FF;
             font-family: 'Montserrat', sans-serif;
             font-size: 22px;
             font-weight: 700;
             margin-bottom: 30px;
+
+            &:hover {
+                color: #F0145A;
+            }
         }
         
         .card-text {
