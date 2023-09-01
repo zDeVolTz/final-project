@@ -18,29 +18,30 @@
 }
 
 .wrapper {
-    @include mix.wrapper-media("mob");
+    @include mix.wrapper-media(30px,30px);
 }
 
 @media (min-width : map.get(maps.$min-width, "tabletSD")) {
   .wrapper {
-    @include mix.wrapper-media("tabletSD");
+    @include mix.wrapper-media(60px,60px);
   }
 }
 
 @media (min-width : map.get(maps.$min-width, "tabletHD")) {
     .wrapper {
-      @include mix.wrapper-media("tabletHD");
+      @include mix.wrapper-media(60px,60px);
     }
 }
 
 @media (min-width : map.get(maps.$min-width, "desktopSD")) {
     .wrapper {
-      @include mix.wrapper-media("desktopSD");
+      @include mix.wrapper-media(60px,60px);
     }
 }
 
 @media (min-width : map.get(maps.$min-width, "desktopHD")) {
     .wrapper {
-      @include mix.wrapper-media("desktopHD");
+      width : map.get(maps.$min-width, "desktopHD");
+      @include mix.wrapper-media(160px,160px);
     }
 }

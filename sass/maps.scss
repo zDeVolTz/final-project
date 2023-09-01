@@ -1,9 +1,9 @@
-$width: (
-    "mob": 315px,
-    "tabletSD": 648px,
-    "tabletHD": 904px,
-    "desktopSD": 1320px,
-    "desktopHD": 1600px
+$card-pride-width: (
+    "mob": 100%,
+    "tabletSD": 45%,
+    "tabletHD": 28.9%,
+    "desktopSD": 30.3%,
+    "desktopHD": 30.8%
 );
 
 $min-width: (
@@ -15,19 +15,19 @@ $min-width: (
 );
 
 $width-partner-cards: (
-    "mob" : 375px,
-    "tabletSD" : 768px,
-    "tabletHD": 1024px,
-    "desktopSD": 1440px,
+    "mob" : 100%,
+    "tabletSD" : 100%,
+    "tabletHD": 100%,
+    "desktopSD": 100%,
     "desktopHD": 1720px
 );
 
 $width-partner-card: (
-    "mob" : 375px,
-    "tabletSD" : 256px,
-    "tabletHD": 256px,
-    "desktopSD": 360px,
-    "desktopHD": 430px
+    "mob" : 100%,
+    "tabletSD" : 33.3%,
+    "tabletHD": 25%,
+    "desktopSD": 25%,
+    "desktopHD": 25%
 );
 
 $partner-url: (

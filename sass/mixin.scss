@@ -2,8 +2,9 @@
 @use "sass:map";
 
 
-@mixin wrapper-media ($size) {
+@mixin wrapper-media ($left,$right) {
     margin-left: auto;
     margin-right: auto;
-    width: map.get(maps.$width, $size);
+    padding-left: $left;
+    padding-right: $right;
 }

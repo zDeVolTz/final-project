@@ -6,7 +6,6 @@
 }
 
 .services-link-tittle {
-    display: flex;
     margin-bottom: 10px;
 
     .link-style {
@@ -56,12 +55,12 @@
 .cards-pride {
     margin-top: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
 
     .card-pride {
-        width: 315px;
+        width: map.get(maps.$card-pride-width, "mob");
 
         .card-img {
             padding: 14px;
@@ -100,7 +99,7 @@
         gap : 60px;
 
         .card-pride {
-            width: 294px;
+            width: map.get(maps.$card-pride-width, "tabletSD");
         }
     }
   }
@@ -108,7 +107,7 @@
 @media (min-width : map.get(maps.$min-width, "tabletHD")) {
     .cards-pride {
         .card-pride {
-            width: 261px;
+            width: map.get(maps.$card-pride-width, "tabletHD");
         }
     }
     
@@ -117,7 +116,7 @@
 @media (min-width : map.get(maps.$min-width, "desktopSD")) {
     .cards-pride {
         .card-pride {
-            width: 400px;
+            width: map.get(maps.$card-pride-width, "desktopSD");
         }
     }
     
@@ -126,7 +125,7 @@
 @media (min-width : map.get(maps.$min-width, "desktopHD")) {
     .cards-pride {
         .card-pride {
-            width: 493px;
+            width: map.get(maps.$card-pride-width, "desktopHD");
         }
     }
     
