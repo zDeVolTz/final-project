@@ -3,6 +3,9 @@
 @use "mixin" as mix;
 @use "company-pride" as *;
 @use "partner-company" as *;
+@use "symbol" as *;
+@use "advantages" as *;
+@use "header.scss" as *;
 @import "../styles/reset.css";
 @import "../fonts/stylesheet.css";
 

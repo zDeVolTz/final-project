@@ -1,0 +1,117 @@
+@use "maps" as maps;
+@use "sass:map";
+
+.company-advantage {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.list-of-advantage {
+    ul {
+        display: flex;
+        gap: 30px;
+        overflow-x: scroll;
+        white-space: nowrap;
+        padding-bottom: 30px;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.30);
+        li:first-child a {
+            background-image: linear-gradient(118deg, #EF8080 0%, #F0145A 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        li a {
+            line-height: normal;
+            text-decoration: none;
+            color:  #B3B3BA;
+            font-family: "Montserrat",sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        li:not(:first-child) a:hover{
+            color: #F0145A;
+        }
+    }
+}
+
+.text-company-advantage {
+    margin-top: 30px;
+    h2 {
+        line-height: 1.2;
+        color:  #FFFFFF;
+        font-family: "Montserrat",sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        
+    }
+    
+    p {
+        margin-top: 30px;
+        color: #FFFFFF;
+        line-height: 1.2;
+        font-family: "Montserrat",sans-serif;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+}
+
+@media (min-width : map.get(maps.$min-width, "tabletSD")) {
+    .company-advantage {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .list-of-advantage {
+        ul {
+            padding-bottom: 60px;
+            li a {
+                font-size: 38px;
+            }
+        }
+    }
+    .text-company-advantage {
+        margin-top: 60px;
+        h2 {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (min-width : map.get(maps.$min-width, "tabletHD")) {
+
+.company-advantage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+    .list-of-advantage {
+        
+        border-right: 4px solid rgba(255, 255, 255, 0.30);
+        padding-right: 60px;
+        ul {
+            flex-direction: column;
+            align-items: flex-end;
+            margin: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+            overflow-x: auto;
+        }
+    }
+
+    .text-company-advantage {
+        margin-top: 0;
+        margin-left: 60px;
+    }
+
+}
+
+@media (min-width : map.get(maps.$min-width, "desktopSD")) {
+
+    .company-advantage {
+       padding-left: 120px;
+       padding-right: 120px;   
+    }
+}
