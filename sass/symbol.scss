@@ -4,7 +4,7 @@
 
 .symbol-header {
     display: block;
-    height: 600px;
+    height: auto;
     background-image: url(../images/Symbol.png);
     background-repeat: no-repeat;
     background-size: 523px 600px;
@@ -32,6 +32,7 @@
 
 .scroll-header {
     margin-top: 159px;
+    margin-bottom: 30px;
     display: flex;
 }
 
@@ -57,7 +58,6 @@
 @media (min-width : map.get(maps.$min-width, "tabletSD")) {
 
     .symbol-header {
-        height: 1024px;
         background-size: 893px 1024px;
         padding-left: 60px;
         padding-right: 60px;
@@ -76,7 +76,6 @@
 @media (min-width : map.get(maps.$min-width, "tabletHD")) {
     
     .symbol-header {
-        height: 768px;
         background-size: 670px 768px;
     }
     .symbol-tittle-and-scroll {
@@ -93,7 +92,6 @@
 @media (min-width : map.get(maps.$min-width, "desktopSD")) {
     
     .symbol-header {
-        height: 799px;
         background-size: 697px 799px;
     }
     .symbol-tittle-and-scroll {
@@ -110,7 +108,6 @@
 @media (min-width : map.get(maps.$min-width, "desktopSD")) {
     
     .symbol-header {
-        height: 1000px;
         background-size: 872px 1000px;
     }
     .symbol-tittle-and-scroll {

@@ -5,7 +5,10 @@
 @use "partner-company" as *;
 @use "symbol" as *;
 @use "advantages" as *;
-@use "header.scss" as *;
+@use "header" as *;
+@use "team" as *;
+@use "publications" as *;
+@use "footer" as *;
 @import "../styles/reset.css";
 @import "../fonts/stylesheet.css";
 
@@ -18,6 +21,16 @@
     position: relative;
     border-radius: 0px 0px 12px 12px;
     background: linear-gradient(208deg, #323264 0%, #323264 59.90%, #643E72 100%);
+}
+
+.main-footer {
+  background-color: #F5F5FA;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .wrapper {

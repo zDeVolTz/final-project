@@ -161,8 +161,8 @@
             content: "";
             position: absolute;
             top: 50%;
-            right: -12px;
-            transform: translate( 0, -50%);
+            right: -9px;
+            transform: translate( 50%, -50%);
             width: 6px;
             height: 6px;
             background-color: #E6E6F0;
@@ -171,28 +171,29 @@
             pointer-events: none;
         }
 
-        .contact-adress{
+        .contact-address{
             color:  #B3B3BA;
             text-align: right;
             font-family: "Montserrat",sans-serif;
             font-size: 16px;
             font-weight: 400;
         }
+    }
 
-        .facebook-header {
-            display: block;
-            width: 24px;
-            height: 24px;
-            background-image: url(../images/icons/Facebook-Header.png);
-            background-size: 24px 24px;
-            background-repeat: no-repeat;
-        }
-        .facebook-header:hover {
+    .facebook-contact {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/icons/Facebook-Header.png);
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+
+        &:hover {
             background-image: url(../images/icons/Facebook-Header-hover.png);
             background-size: 24px 24px;
         }
-
     }
+
 
     .logo {
         margin-top: 30px;
