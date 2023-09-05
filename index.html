@@ -9,88 +9,7 @@
 <body>
     <main>
         <div class="main-header">
-            <section class="symbol-header">
-                <header>
-                    <section class="contact-and-navigation-section mobile">
-                            <div class="contact">
-                                <div class="lang-switch">
-                                    <a href="/">УК</a>
-                                    <a href="/">РУ</a>
-                                    <a href="/">EN</a>
-                                </div>
-                                <a href="tel:0800211927" class="contact-phone">0800 211 927</a>
-                            </div>
-                            <div class="header-logo-menu">
-                                <a href="/" class="logo">
-                                    <img src="./images/Name.png" alt="name company" class = "company-name-img">
-                                    <img src="./images/LAW COMPANY.png" alt="law company" class="company-law-img">
-                                </a>
-                                <p class="logo-current-page">services</p>
-                                <button type="button" class="logo-menu-hamburger" id="hamburger-open">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </button>
-                            </div>
-                    </section>
-                    <section class="contact-and-navigation-section desktop">
-                        <div class="logo-and-navigations">
-                            <div class="contact-and-navigation">
-                                <div class="contact">
-                                    <div class="lang-switch circle-contact">
-                                        <a href="/">УК</a>
-                                        <a href="/">РУ</a>
-                                        <a href="/">EN</a>
-                                    </div>
-                                    <address class="circle-contact contact-address">Kyiv, Mechnikova str, 14/1</address>
-                                    <a href="tel:0800211927" class="circle-contact contact-phone">0800 211 927</a>
-                                    <a href="/" class="facebook-contact circle-contact"></a>
-                                </div>
-                                <div class="header-logo">
-                                    <a href="/" class="logo">
-                                        <img src="./images/Name.png" alt="name company" class = "company-name-img">
-                                        <img src="./images/LAW COMPANY.png" alt="law company" class="company-law-img">
-                                    </a>
-                                </div>
-                                <nav class="navigation">
-                                    <a href="/">about us</a>
-                                    <a href="/">services</a>
-                                    <a href="/">team</a>
-                                    <a href="/">publications</a>
-                                    <a href="/">contact</a>
-                                </nav>
-                            </div>
-                        </div>
-                    </section>
-                </header>
-                <div class="symbol-tittle-and-scroll">
-                    <h2 class="symbol-header-tittle">you legal solutions provider</h2>
-                    <a href="#footer" class="scroll-header"></a>
-                </div>
-            </section>
             <div class="wrapper">
-                <section class="company-advantage">
-                    <div class="list-of-advantage">
-                        <ul>
-                            <li>
-                                <a href="/">Consistent</a>
-                            </li>
-                            <li>
-                                <a href="/">Customer oriented</a>
-                            </li>
-                            <li>
-                                <a href="/">Innovative</a>
-                            </li>
-                            <li>
-                                <a href="/">Business oriented</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="text-company-advantage">
-                        <h2>We turn the idea of legal services</h2>
-                        <p>Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
-                    </div>
-                </section>
                 <section class="company-pride">
                     <div class="company-pride-tittle">
                         <div class="services-link-tittle">
@@ -261,72 +180,8 @@
                         </div>
                     </div>
                 </section>
-            <footer id="footer">
-                <div class="footer-address">
-                    <address class="footer-address-company circle-footer">Kyiv, Mechnikova str., 14/1</address>
-                    <a href="/" class="footer-address-map ">On map</a>
-                </div>
-                <div class="footer-contact">
-                    <a href="/" class="facebook-contact circle-footer"></a>
-                    <a href="tel:0800211927" class="circle-footer footer-phone">0800 211 927</a>
-                    <a href="mailto:contact@forstudy.space" class="footer-email">contact@forstudy.space</a>
-                </div>
-                <p class="copyright">© 2023 HLEGAL Law company, LLC</p>
-            </footer>
             </div>
         </div>
     </main>
-<div class="mob-nav-popup mob-nav-popup-closed" id="mob-nav-popup">
-    <div class="mob-nav-card " id="mob-nav-card">
-        <button type="button" id="close-mob-nav" class="close-mob-nav">
-            <img src="./images/icons/Close.png" alt="close">
-        </button>
-        <nav class="mob-nav">
-            <a href="/">about us</a>
-            <a href="/">services</a>
-            <a href="/">team</a>
-            <a href="/">publications</a>
-            <a href="/">contact</a>
-        </nav>
-    </div>
-</div>
-<script>
-
-const elipseElements = document.querySelectorAll('.elipse');
-
-function handleClick(event) {
-
-    event.target.classList.add('active');
-
-    elipseElements.forEach((element) => {
-        element.classList.remove('active');
-    });
-
-    event.target.classList.add('active');
-}
-
-elipseElements.forEach((element) => {
-    element.addEventListener('click', handleClick);
-});
-
-const btn = document.querySelector('#close-mob-nav');
-const popup = document.querySelector('#mob-nav-popup');
-const btnOpen = document.querySelector('#hamburger-open')
-const navCard = document.querySelector('#mob-nav-card')
-
-btn.addEventListener('click',() => {
-    popup.classList.add('mob-nav-popup-closed');
-    navCard.classList.remove('menu-open');
-})
-
-btnOpen.addEventListener('click',() => {
-    popup.classList.remove('mob-nav-popup-closed');
-    setTimeout(() => {
-        navCard.classList.add('menu-open');
-    }, 100);
-
-})
-
-</script>
 </body>
 </html>
