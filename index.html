@@ -26,7 +26,7 @@
                                     <img src="./images/LAW COMPANY.png" alt="law company" class="company-law-img">
                                 </a>
                                 <p class="logo-current-page">services</p>
-                                <button type="button" class="logo-menu-hamburger closed">
+                                <button type="button" class="logo-menu-hamburger" id="hamburger-open">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -276,6 +276,20 @@
             </div>
         </div>
     </main>
+<div class="mob-nav-popup mob-nav-popup-closed" id="mob-nav-popup">
+    <div class="mob-nav-card " id="mob-nav-card">
+        <button type="button" id="close-mob-nav" class="close-mob-nav">
+            <img src="./images/icons/Close.png" alt="close">
+        </button>
+        <nav class="mob-nav">
+            <a href="/">about us</a>
+            <a href="/">services</a>
+            <a href="/">team</a>
+            <a href="/">publications</a>
+            <a href="/">contact</a>
+        </nav>
+    </div>
+</div>
 <script>
 
 const elipseElements = document.querySelectorAll('.elipse');
@@ -294,6 +308,24 @@ function handleClick(event) {
 elipseElements.forEach((element) => {
     element.addEventListener('click', handleClick);
 });
+
+const btn = document.querySelector('#close-mob-nav');
+const popup = document.querySelector('#mob-nav-popup');
+const btnOpen = document.querySelector('#hamburger-open')
+const navCard = document.querySelector('#mob-nav-card')
+
+btn.addEventListener('click',() => {
+    popup.classList.add('mob-nav-popup-closed');
+    navCard.classList.remove('menu-open');
+})
+
+btnOpen.addEventListener('click',() => {
+    popup.classList.remove('mob-nav-popup-closed');
+    setTimeout(() => {
+        navCard.classList.add('menu-open');
+    }, 100);
+
+})
 
 </script>
 </body>

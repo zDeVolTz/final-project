@@ -20,11 +20,11 @@
     overflow: hidden;
     border-radius: 8px 8px 8px 8px;
     position: relative;
-    -webkit-transition: left 3s;
-    -moz-transition: left 3s;
-    -o-transition: left 3s;
     transition: left 3s;
 
+    .team-card:target {
+        left: 0;
+    }
 
     .photo-card {
         overflow: hidden; 
@@ -140,10 +140,6 @@
 
   .buttons a:not(.active):hover {
     background-color: rgba($color: #24A3FF, $alpha: 0.6);;
-  }
-
-  .active:nth-child(1) {
-    background-color: #24A3FF;
   }
 
  .buttons .active {

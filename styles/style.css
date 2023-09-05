@@ -597,6 +597,10 @@
   border: none;
   background: none;
 }
+.logo-menu-hamburger:active {
+  border-radius: 8px;
+  background-color: #E6E6F0;
+}
 .logo-menu-hamburger span {
   display: block;
   width: 100%;
@@ -767,10 +771,10 @@
   overflow: hidden;
   border-radius: 8px 8px 8px 8px;
   position: relative;
-  -webkit-transition: left 3s;
-  -moz-transition: left 3s;
-  -o-transition: left 3s;
   transition: left 3s;
+}
+.team-card .team-card:target {
+  left: 0;
 }
 .team-card .photo-card {
   overflow: hidden;
@@ -868,10 +872,6 @@
 
 .buttons a:not(.active):hover {
   background-color: rgba(36, 163, 255, 0.6);
-}
-
-.active:nth-child(1) {
-  background-color: #24A3FF;
 }
 
 .buttons .active {
@@ -1151,6 +1151,82 @@ footer {
     right: 0;
   }
 }
+.mob-nav-popup-closed {
+  display: none;
+}
+
+.mob-nav-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(50, 50, 100, 0.7);
+}
+
+.mob-nav-card.menu-open {
+  bottom: 0;
+}
+
+.mob-nav-card {
+  position: absolute;
+  display: block;
+  width: 95.6%;
+  left: 50%;
+  bottom: -100%;
+  transition: 1s;
+  transform: translate(-50%, 0);
+  border-radius: 12px 12px 0px 0px;
+  background-color: #fff;
+  padding-top: 64px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+}
+.mob-nav-card .close-mob-nav {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.mob-nav-card .close-mob-nav img {
+  object-fit: cover;
+  border: 0;
+  width: 32px;
+  height: 32px;
+}
+.mob-nav-card .close-mob-nav:hover {
+  background-color: #E6E6F0;
+  border-radius: 8px;
+}
+.mob-nav-card .mob-nav a {
+  margin-bottom: 15px;
+  display: block;
+  text-decoration: none;
+  color: #24A3FF;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  border-radius: 12px;
+  background: #F5F5FA;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.mob-nav-card .mob-nav a:active {
+  background-color: #E6E6F0;
+  border-radius: 8px;
+}
+.mob-nav-card .mob-nav a:last-child {
+  margin-bottom: 0px;
+}
+
 * {
   box-sizing: border-box;
 }
