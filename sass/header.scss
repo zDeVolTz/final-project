@@ -223,31 +223,33 @@
 
     .navigation {
         display: block;
-        a {
-            text-decoration: none;
-            color: #FFF;
-            text-align: right;
-            font-family: "Montserrat",sans-serif;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-left: 15px;
-            border-bottom: 2px solid rgba($color: #ffffff, $alpha: 0);
-        }
+        ul {
+            li {
+                margin-left: 15px;
+                a {
+                    text-decoration: none;
+                    color: #FFF;
+                    text-align: right;
+                    font-family: "Montserrat",sans-serif;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 1.2;
+                   
+                    border-bottom: 2px solid rgba($color: #ffffff, $alpha: 0);
+                }
 
-        a:first-child {
-            margin-left: 0;
-        }
-
-        a:hover {
-            border-bottom: 2px solid #FFFFFF;
+                a:hover {
+                    border-bottom: 2px solid #FFFFFF;
+                }
+                li:first-child {
+                    margin-left: 0;
+                }
+            }
         }
     } 
 }  
   
 @media (min-width : map.get(maps.$min-width, "tabletHD")) {
-
-   
 
     .tabletSD {
         display: none;
@@ -288,7 +290,7 @@
 
     }
 
-    .navigation {
+    .navigation ul {
         display: flex;
         justify-content: flex-end;
         margin-top: 16px;

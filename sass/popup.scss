@@ -59,9 +59,10 @@
     }
 
 
-    .mob-nav {
-        a {
-            margin-bottom: 15px;
+    .mob-nav ul li {
+        margin-bottom: 15px;
+       
+            a {
             display: block;
             text-decoration: none;
             color:  #24A3FF;
@@ -79,10 +80,10 @@
                 background-color: #E6E6F0;
                 border-radius: 8px;
              }
+        }
 
-            &:last-child{
-                margin-bottom: 0px;
-            }
+        &:last-child{
+            margin-bottom: 0px;
         }
     }
 
