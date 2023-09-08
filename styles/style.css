@@ -33,7 +33,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   line-height: 1.2;
 }
 .company-pride__card-title:hover {
@@ -892,7 +892,8 @@
 }
 .publications__photo-img {
   object-fit: cover;
-  max-width: 100%;
+  width: 100%;
+  height: 200px;
 }
 
 .publications__content {
