@@ -1,0 +1,145 @@
+@use "maps" as maps;
+@use "sass:map";
+@use "_variables" as *;
+
+.footer__block {
+    position: relative;
+    padding-top: 30px;
+    border-top: 2px solid #E6E6F0;
+}
+
+.footer__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__address-company {
+    color: #323264;
+    font-family: $font-family;
+    font-size: $font-size-default;
+    font-weight: $font-weight-normal;
+    line-height: $line-height;
+}
+
+.footer__address-map {
+    text-decoration: none;
+    margin-top: 10px;
+    color:  $btn-color-active;
+    font-family: $font-family;
+    font-weight: $font-weight-bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    &:hover {
+        color: $color-current;
+    }
+
+}
+
+.footer__contact {
+    margin-top: 21px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__facebook {
+    display: block;
+    width: 38px;
+    height: 38px;
+    background-image: url(../images/icons/Facebook-Footer.png);
+    background-size: 38px 38px;
+    background-repeat: no-repeat;
+
+    &:hover {
+        background-image: url(../images/icons/Facebook-Header-hover.png);
+        background-size: 38px 38px;
+    }
+}
+
+.footer__phone {
+    text-decoration: none;
+    color: #46466E;
+    font-size: $font-size-default;
+    font-family: $font-family;
+    font-weight: $font-weight-bold;
+    line-height: $line-height;
+}
+
+.footer__email {
+    
+    text-decoration: none;
+    color: $btn-color-active;
+    font-size: $font-size-default;
+    font-family: $font-family;
+    font-weight: $font-weight-bold;
+    line-height: $line-height;
+
+    &:hover {
+        color: $color-current;
+    }
+}
+
+.footer__copyright {
+    margin-top: 30px;
+    text-align: center;
+    color: #B3B3BA;
+    text-align: center;
+    font-family: $font-family;
+    font-size: $font-size-default;
+    font-weight: $font-weight-normal;
+    line-height: $line-height;
+}
+
+@media (min-width : map.get(maps.$min-width, "tabletSD")) {
+
+    
+    .footer__address {
+        flex-direction: row;
+        align-items: center;
+    }
+    .footer__address-map {
+        margin-top: 0px;
+
+    }
+
+    .footer__contact {
+        margin-top: 21px;
+        gap: 0px;
+        flex-direction: row;
+
+    }
+
+    .footer--circle {
+        margin-right: 26px;
+        position: relative;
+
+        &:after {
+            font-size: 0;
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -13px;
+            transform: translate( 50%, -50%);
+            width: 6px;
+            height: 6px;
+            background-color: #B3B3BA;
+            overflow: hidden;
+            border-radius: 30px;
+            pointer-events: none;
+        }
+    }
+    
+    .footer__copyright {
+        position: absolute;
+        top:30px;
+        right: 0;
+        margin: 0;
+    }
+
+}
+
+

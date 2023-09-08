@@ -1,0 +1,84 @@
+@use "_variables" as var;
+@use "maps" as maps;
+@use "sass:map";
+
+
+.title-block__link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+
+    &--mb-small {
+        margin-bottom: 5px;
+    }
+
+    &--mb-large {
+        margin-bottom: 10px;
+    }
+
+    &--mb-media {
+        margin-bottom: 5px;
+    }
+
+    &:after {
+        content: "";
+        background-image: url(../images/icons/Arrow-regular.png);
+        margin-left: 2px;
+        width: 12px;
+        height: 12px;
+    }
+
+    &:hover {
+        color: var.$color-current;
+
+        &::after {
+            content: "";
+            background-image: url(../images/icons/Arrow-hover.png);
+            margin-left: 2px;
+            width: 12px;
+            height: 12px;
+        }
+    } 
+
+}
+
+    .title-block__title {
+        font-family: var.$font-family;
+        font-size: 30px;
+        font-weight: var.$font-weight-bold;
+        line-height: var.$line-height;
+        background-image: linear-gradient(118deg, #F0145A 0%, #EF8080 100%);
+        background-clip: padding-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    @media (min-width : map.get(maps.$min-width, "tabletSD")) {
+
+        .title-block__link {
+            &--mb-media {
+                margin-bottom: 10px;
+            }
+        }
+        .title-block__title {
+            font-size: 38px;
+        }
+    }
+    
+    @media (min-width : map.get(maps.$min-width, "tabletHD")) {
+       
+    }
+    
+    @media (min-width : map.get(maps.$min-width, "desktopSD")) {
+       
+    }
+    
+    @media (min-width : map.get(maps.$min-width, "desktopHD")) {
+       
+    }

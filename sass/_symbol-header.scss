@@ -1,0 +1,122 @@
+@use "maps" as maps;
+@use "sass:map";
+@use "mixin" as mix;
+@use "_variables" as var;
+
+.symbol-header {
+    display: block;
+    height: auto;
+    background-image: url(../images/Symbol.png);
+    background-repeat: no-repeat;
+    background-size: 523px 600px;
+    background-position: top;
+  
+}
+
+.symbol-header__title-scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 139px;
+    padding-bottom: 30px;
+}
+
+.symbol-header__title {
+    display: block;
+    width: 90%;
+    color: var.$color-text-primary;
+    text-align: center;
+    line-height: var.$line-height;
+    font-family: var.$font-family;
+    font-size: 38px;
+    font-weight: var.$font-weight-bold;
+}
+
+.symbol-header__scroll {
+    margin-top: 159px;
+    display: flex;
+
+    &::before {
+        content: "";
+        width: 42px;
+        height: 42px;
+        
+        background-image: url(../images/icons/Scroll.png);
+        background-repeat: no-repeat;
+        background-size: 42px 42px;
+    }
+
+    &:hover::before {
+        content: "";
+        width: 42px;
+        height: 42px;
+        background-image: url(../images/icons/Scroll-hover.png);
+        background-repeat: no-repeat;
+        background-size: 42px 42px;
+    }
+}
+
+
+
+
+
+@media (min-width : map.get(maps.$min-width, "tabletSD")) {
+
+    .symbol-header {
+        background-size: 893px 1024px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 50px;
+    }
+    .symbol-header__title-scroll {
+        margin-top: 269px;
+    }
+    .symbol-header__scroll {
+        margin-top: 417px;
+    }
+    
+}
+
+@media (min-width : map.get(maps.$min-width, "tabletHD")) {
+    
+    .symbol-header {
+        background-size: 670px 768px;
+    }
+
+    .symbol-header__title-scroll {
+        margin-top: 245px;
+    }
+
+    .symbol-header__scroll {
+        margin-top: 289px;
+    }
+    
+}
+
+@media (min-width : map.get(maps.$min-width, "desktopSD")) {
+    
+    .symbol-header {
+        background-size: 697px 799px;
+    }
+    .symbol-header__title-scroll {
+        margin-top: 261px;
+    }
+
+    .symbol-header__scroll {
+        margin-top: 305px;
+    }
+    
+}
+
+@media (min-width : map.get(maps.$min-width, "desktopSD")) {
+    
+    .symbol-header {
+        background-size: 872px 1000px;
+    }
+    .symbol-header__title-scroll {
+        margin-top: 361px;
+    }
+    .scroll-header__scroll {
+        margin-top: 405px;
+    }  
+}
