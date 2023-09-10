@@ -261,9 +261,26 @@
         &:hover {
             border-bottom: 2px solid #FFFFFF;
         }
+
+        &--active {
+            color: var.$color-current;
+            border-color: var.$color-current;
+            &:hover {
+                border-color: var.$color-current;
+            }
+        }
     }  
-}  
-  
+}
+
+@media (min-width : map.get(maps.$min-width, "tabletSD")){
+    
+    .contact-and-nav{
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 50px;
+    }
+}
+
 @media (min-width : map.get(maps.$min-width, "tabletHD")) {
     
     .contact-and-nav__logo-nav {

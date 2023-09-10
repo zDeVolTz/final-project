@@ -3,12 +3,6 @@
 @use "../abstracts/variables" as var;
 
 
-
-.main-center__partner {
-    margin-top: 60px;
-}
-
-
 .partner-company__title {
     text-align: center;
     font-family: var.$font-family;
@@ -175,9 +169,6 @@
 
 @media (min-width : map.get(maps.$min-width, "desktopHD")) {
 
-    .main-center__partner {
-        margin-bottom: 60px;
-    }
     .partner-company__partner-cards {
         width: map.get(maps.$width-partner-cards, "desktopHD");
         border-radius: 12px;

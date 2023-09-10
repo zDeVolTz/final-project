@@ -13,5 +13,12 @@
 @use "./blocks/_footer" as *;
 @use "./blocks/_popup" as *;
 @use "./blocks/_main-header" as *;
+@use "./blocks/main-center" as *;
 @use "./blocks/_wrapper" as *;
+@use "./blocks/container" as *;
+@use "./blocks/services-img-block" as *;
+@use "./blocks/services-card" as *;
+@use "./blocks/services-area" as *;
+@use "./blocks/addition-wrapper" as *;
+@use "./blocks/buttons" as *;
 

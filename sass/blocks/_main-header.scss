@@ -7,11 +7,20 @@
     position: relative;
     border-radius: 0px 0px 12px 12px;
     background: linear-gradient(208deg, #323264 0%, #323264 59.90%, #643E72 100%);
+
+    &__services-card {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 .main-header__advantage {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.main-header__company-pride-services {
+    margin-top: 30px;
 }
 
 .main-header__shadow {
@@ -54,12 +63,26 @@
     }
 }
 
+
 @media (min-width : map.get(maps.$min-width, "tabletSD")) {
+    
+    .main-header__company-pride-services {
+        margin-top: 60px;
+    }
     
     .main-header__advantage {
         margin-top: 60px;
         margin-bottom: 60px;
     }
+
+    .main-header {
+
+        &__services-card {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+    }
+
 }
 
 @media (min-width : map.get(maps.$min-width, "tabletHD")) {

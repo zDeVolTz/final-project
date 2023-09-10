@@ -2,12 +2,12 @@
 @use "sass:map";
 @use "../abstracts/mixin" as mix;
 
-.wrapper {
+.addition-wrapper {
     @include mix.wrapper-media(30px,30px);
 }
 
 @media (min-width : map.get(maps.$min-width, "tabletSD")) {
-  .wrapper {
+  .addition-wrapper {
     @include mix.wrapper-media(60px,60px);
   }
 }
@@ -16,12 +16,13 @@
 }
 
 @media (min-width : map.get(maps.$min-width, "desktopSD")) {
-   
+    .addition-wrapper {
+        @include mix.wrapper-media(180px,180px);
+      }
 }
 
 @media (min-width : map.get(maps.$min-width, "desktopHD")) {
-    .wrapper {
-      width : map.get(maps.$min-width, "desktopHD");
-      @include mix.wrapper-media(160px,160px);
+    .addition-wrapper {
+      @include mix.wrapper-media(280px,280px);
     }
 }
