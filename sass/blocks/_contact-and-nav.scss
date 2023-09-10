@@ -1,7 +1,7 @@
-@use "_mixin" as mix;
-@use "_maps" as maps;
+@use "../abstracts/mixin" as mix;
+@use "../abstracts/maps" as maps;
 @use "sass:map";
-@use "_variables" as var;
+@use "../abstracts/variables" as var;
 
 .contact-and-nav--desktop {
     display: none;

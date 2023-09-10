@@ -1,7 +1,7 @@
-@use "maps" as maps;
+@use "../abstracts/maps" as maps;
 @use "sass:map";
-@use "mixin" as mix;
-@use "_variables" as var;
+@use "../abstracts/mixin" as mix;
+@use "../abstracts/variables" as var;
 
 .symbol-header {
     display: block;

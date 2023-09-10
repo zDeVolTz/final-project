@@ -1,6 +1,6 @@
-@use "maps" as maps;
+@use "../abstracts/maps" as maps;
 @use "sass:map";
-@use "mixin" as mix;
+@use "../abstracts/mixin" as mix;
 
 .wrapper {
     @include mix.wrapper-media(30px,30px);

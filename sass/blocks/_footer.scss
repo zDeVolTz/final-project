@@ -1,6 +1,7 @@
-@use "maps" as maps;
+@use "../abstracts/maps" as maps;
 @use "sass:map";
-@use "_variables" as *;
+@use "../abstracts/variables" as *;
+
 
 .footer__block {
     position: relative;

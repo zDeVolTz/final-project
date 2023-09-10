@@ -1,6 +1,6 @@
-@use "_variables" as var;
-@use "maps" as maps;
+@use "../abstracts/maps" as maps;
 @use "sass:map";
+@use "../abstracts/variables" as var;
 
 
 .title-block__link {

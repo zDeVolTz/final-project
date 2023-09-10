@@ -1,24 +1,17 @@
-@use "_company-pride" as *;
-@use "_partner-company" as *;
-@use "_symbol-header" as *;
-@use "_company-advantage" as *;
-@use "_contact-and-nav.scss" as *;
-@use "_team" as *;
-@use "_title-block" as *;
-@use "_main-footer" as *;
-@use "_publications" as *;
-@use "_footer" as *;
-@use "_popup" as *;
-@use "_main-header" as *;
-@use "_wrapper" as *;
-@import "../styles/reset.css";
-@import "../fonts/stylesheet.css";
+@use "./base/base" as *;
+@use "./base/_reset" as *;
+@use "./base/_fonts" as *;
+@use "./blocks/_company-pride" as *;
+@use "./blocks/_partner-company" as *;
+@use "./blocks/_symbol-header" as *;
+@use "./blocks/_company-advantage" as *;
+@use "./blocks/_contact-and-nav.scss" as *;
+@use "./blocks/_team" as *;
+@use "./blocks/_title-block" as *;
+@use "./blocks/_main-footer" as *;
+@use "./blocks/_publications" as *;
+@use "./blocks/_footer" as *;
+@use "./blocks/_popup" as *;
+@use "./blocks/_main-header" as *;
+@use "./blocks/_wrapper" as *;
 
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}

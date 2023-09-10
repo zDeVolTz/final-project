@@ -1,6 +1,7 @@
-@use "_maps" as maps;
+@use "../abstracts/maps" as maps;
 @use "sass:map";
-@use "_variables" as var;
+@use "../abstracts/variables" as var;
+
 
 .main-center__team {
     margin-top: 50px;
