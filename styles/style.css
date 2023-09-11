@@ -1062,6 +1062,7 @@ table {
 }
 
 .publications__card {
+  flex: 1;
   border-radius: 8px;
   overflow: hidden;
   background-color: #FFF;
@@ -1119,21 +1120,16 @@ table {
 @media (min-width: 768px) {
   .publications__cards {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
   }
-  .publications__card:nth-child(-n+2) {
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 0;
+  .publications__card {
+    min-width: calc(50% - 30px);
   }
 }
 @media (min-width: 1024px) {
-  .publications__card:nth-child(3) {
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 0;
+  .publications__card {
+    min-width: calc(33.3% - 30px);
   }
 }
 .footer__block {
