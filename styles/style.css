@@ -711,6 +711,11 @@ table {
   .contact-and-nav--desktop {
     display: block;
   }
+  .contact-and-nav {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 50px;
+  }
   .contact-and-nav__contact {
     padding: 0px;
     background: none;
@@ -762,7 +767,15 @@ table {
     margin-bottom: 30px;
     display: inline-flex;
     font-size: 0px;
-    flex-direction: column;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .contact-and-nav__current-page {
+    font-size: 36px;
+  }
+  .contact-and-nav__current-page::before {
+    font-size: 42px;
+    font-weight: 500;
   }
   .contact-and-nav__company-name-img {
     display: block;
@@ -803,13 +816,6 @@ table {
   }
   .contact-and-nav__link--active:hover {
     border-color: #F0145A;
-  }
-}
-@media (min-width: 768px) {
-  .contact-and-nav {
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 50px;
   }
 }
 @media (min-width: 1024px) {

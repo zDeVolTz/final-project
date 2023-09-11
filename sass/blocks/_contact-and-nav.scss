@@ -157,7 +157,13 @@
         display: block;
     }
 
-    
+    .contact-and-nav{
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 50px;
+    }
+
+   
 
     .contact-and-nav__contact {
         padding: 0px;
@@ -219,7 +225,17 @@
         margin-bottom: 30px;
         display: inline-flex;
         font-size: 0px;
-        flex-direction: column;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    .contact-and-nav__current-page{
+        font-size: 36px;
+
+        &::before{
+            font-size: 42px;
+            font-weight: 500;
+        }
     }
 
     .contact-and-nav__company-name-img {
@@ -272,14 +288,9 @@
     }  
 }
 
-@media (min-width : map.get(maps.$min-width, "tabletSD")){
-    
-    .contact-and-nav{
-        padding-left: 60px;
-        padding-right: 60px;
-        padding-top: 50px;
-    }
-}
+
+
+
 
 @media (min-width : map.get(maps.$min-width, "tabletHD")) {
     
