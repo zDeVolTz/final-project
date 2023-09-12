@@ -13,6 +13,11 @@
 }
 
 @media (min-width : map.get(maps.$min-width, "tabletHD")) {
+
+  .addition-wrapper--tHD-L {
+    @include mix.wrapper-media(180px,180px);
+  }
+
 }
 
 @media (min-width : map.get(maps.$min-width, "desktopSD")) {

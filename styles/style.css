@@ -577,7 +577,7 @@ table {
 .contact-and-nav--pb {
   padding-bottom: 60px;
 }
-.contact-and-nav --pb-mobile {
+.contact-and-nav--pb-mobile {
   padding-bottom: 30px;
 }
 
@@ -1650,6 +1650,14 @@ table {
     padding-right: 60px;
   }
 }
+@media (min-width: 1024px) {
+  .addition-wrapper--tHD-L {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
 @media (min-width: 1440px) {
   .addition-wrapper {
     margin-left: auto;
@@ -1820,6 +1828,81 @@ table {
   }
   .publication-entry__title--h3 {
     font-size: 22px;
+  }
+}
+.team-page {
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
+.team-page__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.team-page__card {
+  flex: 1;
+  display: block;
+  min-width: 100%;
+}
+.team-page__card-img {
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.team-page__content {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-page__title {
+  display: block;
+  color: #323264;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+.team-page__title:hover {
+  color: #F0145A;
+}
+.team-page__subtitle {
+  display: block;
+  color: var(--grey-text, #B3B3BA);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.team-page__button {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-image: url(../../images/icons/More.png);
+  background-repeat: no-repeat;
+}
+.team-page__button:hover {
+  background-image: url(../../images/icons/More-hover.png);
+}
+
+@media (min-width: 768px) {
+  .team-page__card {
+    min-width: calc(50% - 30px);
+  }
+}
+@media (min-width: 1024px) {
+  .team-page__card {
+    min-width: calc(33.3% - 30px);
   }
 }
 
