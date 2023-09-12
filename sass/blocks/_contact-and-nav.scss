@@ -3,9 +3,22 @@
 @use "sass:map";
 @use "../abstracts/variables" as var;
 
-.contact-and-nav--desktop {
-    display: none;
+.contact-and-nav{
+    &--desktop {
+        display: none;
+    }
+
+    &--pb {
+        padding-bottom: 60px;
+    }
+
+    --pb-mobile{
+        padding-bottom: 30px;
+    }
+
 }
+
+
 
 .contact-and-nav__contact {
     padding-top: 10px;
@@ -38,11 +51,21 @@
 
     &--light{
         color: var.$color-text-primary;
+
+        &:not(:last-child):hover {
+            border-radius: 8px;
+            background-color: var.$color-link-primary;
+        }
     }
 
-    &:not(:last-child):hover {
-        border-radius: 8px;
-        background-color: var.$color-link-primary;
+    &--dark{
+        color: #B3B3BA;
+
+        &:not(:last-child):hover {
+            border-radius: 8px;
+            background-color: #F5F5FA;
+        }
+
     }
 
     &:last-child {
@@ -61,12 +84,17 @@
     &--light{
         color: var.$color-text-primary;
     }
+
+    &--dark{
+        color: #B3B3BA;
+    }
 } 
 
 
 .contact-and-nav__logo-menu {
     @include mix.wrapper-media(15px,15px);
     margin-top: 15px;
+    padding-bottom: 10px;
     display: flex;
     align-items: flex-start;
     position: relative;
@@ -100,6 +128,10 @@
         color: var.$color-text-primary;
     }
 
+    &--dark{
+        color: #323264;
+    }
+
     &::before {
         content: "/";
         margin-left: 4px;
@@ -114,9 +146,8 @@
 
 .contact-and-nav__logo-hamburger {
     position: absolute;
-    right: 0;
-    top: 40%;
-    transform: translate(-50%,-50%);
+    right: 15px;
+    top: -4px;
     display: block;
     cursor: pointer;
     width: 32px;
@@ -139,6 +170,10 @@
     
     &--light span {
         background-color: var.$btn-bct-light; 
+    }
+
+    &--dark span {
+        background-color: #323264;
     }
     
     span:first-child {
@@ -206,15 +241,20 @@
 
 
     .contact-and-nav__facebook-contact {
+
         display: block;
         width: 24px;
         height: 24px;
-        background-image: url(../images/icons/Facebook-Header.png);
         background-size: 24px 24px;
         background-repeat: no-repeat;
+        background-image: url(../../images/icons/Facebook-Header.png);
+
+        &--dark {
+            background-image: url(../../images/Facebook-Header-grey.png);
+        }
 
         &:hover {
-            background-image: url(../images/icons/Facebook-Header-hover.png);
+            background-image: url(../../images/icons/Facebook-Header-hover.png);
             background-size: 24px 24px;
         }
     }
@@ -267,22 +307,34 @@
     }
     .contact-and-nav__link {
         text-decoration: none;
-        color: var.$color-text-primary;
         font-family: var.$font-family;
         font-size: var.$font-size-default;
         font-weight: var.$font-weight-bold;
         line-height: var.$line-height;
         border-bottom: 2px solid rgba($color: #ffffff, $alpha: 0);
         
-        &:hover {
-            border-bottom: 2px solid #FFFFFF;
-        }
+       
 
         &--active {
             color: var.$color-current;
             border-color: var.$color-current;
             &:hover {
                 border-color: var.$color-current;
+            }
+        }
+
+        &--light {
+            color: var.$color-text-primary;
+
+            &:hover {
+                border-bottom: 2px solid #FFFFFF;
+            }
+        }
+
+        &--dark {
+            color: #24A3FF;
+            &:hover {
+                border-bottom: 2px solid #24A3FF;
             }
         }
     }  
