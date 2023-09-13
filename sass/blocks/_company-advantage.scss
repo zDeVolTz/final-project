@@ -24,8 +24,11 @@
 }
 
 .company-advantage__link  {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background: none;
     line-height: normal;
-    text-decoration: none;
     color:  #B3B3BA;
     font-family: var.$font-family;
     font-size: 30px;
