@@ -96,7 +96,7 @@
     
 }
 
-@media (min-width : map.get(maps.$min-width, "desktopSD")) {
+@media (min-width : map.get(maps.$min-width, "desktopHD")) {
     
     .symbol-header {
         background-size: 872px 1000px;

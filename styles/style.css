@@ -456,7 +456,7 @@ table {
     margin-top: 305px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
   .symbol-header {
     background-size: 872px 1000px;
   }
