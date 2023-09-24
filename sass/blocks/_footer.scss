@@ -52,15 +52,8 @@
 
 .footer__facebook {
     display: block;
-    width: 38px;
-    height: 38px;
-    background-image: url(../images/icons/Facebook-Footer.png);
-    background-size: 38px 38px;
-    background-repeat: no-repeat;
-
-    &:hover {
-        background-image: url(../images/icons/Facebook-Header-hover.png);
-        background-size: 38px 38px;
+    &:hover svg path {
+        fill: rgba(240, 20, 90, 1);
     }
 }
 

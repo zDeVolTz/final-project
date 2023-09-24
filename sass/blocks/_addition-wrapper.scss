@@ -21,9 +21,9 @@
 }
 
 @media (min-width : map.get(maps.$min-width, "desktopSD")) {
-    .addition-wrapper {
-        @include mix.wrapper-media(180px,180px);
-      }
+  .addition-wrapper {
+      @include mix.wrapper-media(180px,180px);
+    }
 }
 
 @media (min-width : map.get(maps.$min-width, "desktopHD")) {

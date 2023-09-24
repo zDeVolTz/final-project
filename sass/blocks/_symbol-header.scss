@@ -36,23 +36,14 @@
     margin-top: 159px;
     display: flex;
 
-    &::before {
-        content: "";
-        width: 42px;
-        height: 42px;
+    &:hover svg   {
+        & circle {
+            stroke: rgba(240, 20, 90, 1);
+        }
+        & path {
+            stroke: rgba(240, 20, 90, 1);
+        }
         
-        background-image: url(../images/icons/Scroll.png);
-        background-repeat: no-repeat;
-        background-size: 42px 42px;
-    }
-
-    &:hover::before {
-        content: "";
-        width: 42px;
-        height: 42px;
-        background-image: url(../images/icons/Scroll-hover.png);
-        background-repeat: no-repeat;
-        background-size: 42px 42px;
     }
 }
 

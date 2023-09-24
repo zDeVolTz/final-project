@@ -243,20 +243,17 @@
     .contact-and-nav__facebook-contact {
 
         display: block;
-        width: 24px;
-        height: 24px;
-        background-size: 24px 24px;
-        background-repeat: no-repeat;
-        background-image: url(../../images/icons/Facebook-Header.png);
+      
 
-        &--dark {
-            background-image: url(../../images/Facebook-Header-grey.png);
+        &--dark svg path {
+            fill:rgba(179, 179, 186, 1);
         }
 
-        &:hover {
-            background-image: url(../../images/icons/Facebook-Header-hover.png);
-            background-size: 24px 24px;
+        
+        &:hover svg path {
+            fill: rgba(240, 20, 90, 1);
         }
+        
     }
 
 

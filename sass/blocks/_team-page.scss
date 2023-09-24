@@ -61,17 +61,18 @@
     }
 
     &__button{
-        display: block;
-        width: 32px;
-        height: 32px;
+        display: flex;
+        font-size: 0;
         border: none;
+        padding: 0;
         border-radius: 50%;
         cursor: pointer;
-        background-image: url(../../images/icons/More.png);
-        background-repeat: no-repeat;
-
-        &:hover {
-            background-image: url(../../images/icons/More-hover.png);
+        background: none;
+        &:hover circle {
+            fill: rgba(237, 237, 247, 1);
+        }
+        &:hover path {
+            stroke:rgba(240, 20, 90, 1);
         }
     }
 

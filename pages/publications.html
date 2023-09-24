@@ -41,7 +41,18 @@
                         </div>
                         <address class="contact-and-nav__contact-address contact-and-nav--circle">Kyiv, Mechnikova str, 14/1</address>
                         <a href="tel:0800211927" class="contact-and-nav__contact-phone contact-and-nav__contact-phone--dark contact-and-nav--circle">0800 211 927</a>
-                        <a href="/" class="contact-and-nav__facebook-contact contact-and-nav__facebook-contact--dark contact-and-nav--circle"></a>
+                        <a href="/" class="contact-and-nav__facebook-contact contact-and-nav__facebook-contact--dark contact-and-nav--circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <g clip-path="url(#clip0_115673_2805)">
+                                <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_115673_2805">
+                                <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
                     </div>
                     <div class="contact-and-nav__logo">
                         <a href="../index.html" class="contact-and-nav__logo-link">
@@ -83,7 +94,10 @@
                     <div class="publications__cards">
                         <div class="publications__card">
                             <div class="publications__photo">
-                                <img src="../images/calculate.jpg" alt="photo" class="publications__photo-img">
+                                <picture>
+                                    <source srcset="../images/Publication-1-1x.webp 1x, ../images/Publication-1-2x.webp 2x" type="image/webp">
+                                    <img src="../images/Publication-1-1x.jpg" srcset="../images/Publication-1-2x.jpg 2x" alt="" class="publications__photo-img"></img>
+                                </picture>
                             </div>
                             <div class="publications__content">
                                 <div class="publications__link-title">
@@ -97,7 +111,10 @@
                         </div>
                         <div class="publications__card">
                             <div class="publications__photo">
-                                <img src="../images/flag.jpg" alt="photo" class="publications__photo-img">
+                                <picture>
+                                    <source srcset="../images/Publication-2-1x.webp 1x, ../images/Publication-2-2x.webp 2x" type="image/webp">
+                                    <img src="../images/Publication-2-1x.jpg" srcset="../images/Publication-2-2x.jpg 2x" alt="" class="publications__photo-img"></img>
+                                </picture>
                             </div>
                             <div class="publications__content">
                                 <div class="publications__link-title">
@@ -111,7 +128,10 @@
                         </div>
                         <div class="publications__card">
                             <div class="publications__photo">
-                                <img src="../images/group.jpg" alt="photo" class="publications__photo-img">
+                                <picture>
+                                    <source srcset="../images/Publication-3-1x.webp 1x, ../images/Publication-3-2x.webp 2x" type="image/webp">
+                                    <img src="../images/Publication-3-1x.jpg" srcset="../images/Publication-3-2x.jpg 2x" alt="" class="publications__photo-img"></img>
+                                </picture>
                             </div>
                             <div class="publications__content">
                                 <div class="publications__link-title">
@@ -125,7 +145,10 @@
                         </div>
                         <div class="publications__card">
                             <div class="publications__photo">
-                                <img src="../images/Lang-law.jpg" alt="photo" class="publications__photo-img">
+                                <picture>
+                                    <source srcset="../images/Publication-4-1x.webp 1x, ../images/Publication-4-2x.webp 2x" type="image/webp">
+                                    <img src="../images/Publication-4-1x.jpg" srcset="../images/Publication-4-2x.jpg 2x" alt="" class="publications__photo-img"></img>
+                                </picture>
                             </div>
                             <div class="publications__content">
                                 <div class="publications__link-title">
@@ -139,7 +162,10 @@
                         </div>
                         <div class="publications__card">
                             <div class="publications__photo">
-                                <img src="../images/ReimOf.jpg" alt="photo" class="publications__photo-img">
+                                <picture>
+                                    <source srcset="../images/Publication-5-1x.webp 1x, ../images/Publication-5-2x.webp 2x" type="image/webp">
+                                    <img src="../images/Publication-5-1x.jpg" srcset="../images/Publication-5-2x.jpg 2x" alt="" class="publications__photo-img"></img>
+                                </picture>
                             </div>
                             <div class="publications__content">
                                 <div class="publications__link-title">
@@ -153,7 +179,10 @@
                         </div>
                         <div class="publications__card">
                             <div class="publications__photo">
-                                <img src="../images/group.jpg" alt="photo" class="publications__photo-img">
+                                <picture>
+                                    <source srcset="../images/Publication-1-1x.webp 1x, ../images/Publication-1-2x.webp 2x" type="image/webp">
+                                    <img src="../images/Publication-1-1x.jpg" srcset="../images/Publication-1-2x.jpg 2x" alt="" class="publications__photo-img"></img>
+                                </picture>
                             </div>
                             <div class="publications__content">
                                 <div class="publications__link-title">
@@ -168,14 +197,25 @@
                     </div>
                     <button type="button" class="buttons publications__buttons">More publications</button>
                 </section>
-                <footer id="footer" class="footer main-footer__footer">
-                    <div class="footer__block footer__block--border">
+                <footer id="footer" class="footer">
+                    <div class="footer__block main-footer__footer footer__block--border">
                         <div class="footer__address">
                             <address class="footer__address-company footer--circle">Kyiv, Mechnikova str., 14/1</address>
                             <a href="/" class="footer__address-map ">On map</a>
                         </div>
                         <div class="footer__contact">
-                            <a href="/" class="footer__facebook footer--circle"></a>
+                            <a href="/" class="footer__facebook footer--circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="39" height="38" viewBox="0 0 39 38" fill="none">
+                                    <g clip-path="url(#clip0_115673_2850)">
+                                    <path d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z" fill="#24A3FF"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_115673_2850">
+                                    <rect width="38" height="38" fill="white" transform="translate(0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
                             <a href="tel:0800211927" class="footer__phone footer--circle">0800 211 927</a>
                             <a href="mailto:contact@forstudy.space" class="footer__email">contact@forstudy.space</a>
                         </div>
