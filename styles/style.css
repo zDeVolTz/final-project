@@ -2320,6 +2320,7 @@ table {
 }
 .contact__message-input {
   height: 130px;
+  resize: none;
 }
 .contact__title {
   margin-bottom: 30px;
