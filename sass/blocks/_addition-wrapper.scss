@@ -28,6 +28,7 @@
 
 @media (min-width : map.get(maps.$min-width, "desktopHD")) {
     .addition-wrapper {
+      width : map.get(maps.$min-width, "desktopHD");
       @include mix.wrapper-media(280px,280px);
     }
 }

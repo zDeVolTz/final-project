@@ -375,11 +375,11 @@
 @media (min-width : map.get(maps.$min-width, "desktopHD")) {
 
     .contact-and-nav{
-        width: 1600px;
+        width: 1920px;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 160px;
+        padding-right: 160px;
     }
    
 }
