@@ -112,7 +112,7 @@
                             In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.
                         </p>
                     </div>
-                    <button type="button" class="buttons services-card__button">Free consultation</button>
+                    <button type="button" class="buttons services-card__button" id="contact-open">Free consultation</button>
                 </section>
                 <section class="services-area main-header__services-area">
                     <h3 class="services-area__title">Services in this area:</h3>
@@ -229,32 +229,54 @@
             </div>
         </div>
     </main>
-<div class="mob-nav-popup mob-nav-popup--closed" id="mob-nav-popup">
-    <div class="mob-nav-popup__card" id="mob-nav-card">
-        <button type="button" id="close-mob-nav" class="mob-nav-popup__close">
-            <img src="../images/icons/Close.png" alt="mob-nav-popup__img">
-        </button>
-        <nav class="mob-nav-popup__mab-nav">
-            <ul class="mob-nav-popup__items">
-                <li class="mob-nav-popup__item">
-                    <a href="./about.html" class="mob-nav-popup__link">about us</a>
-                </li>
-                <li class="mob-nav-popup__item">
-                    <a href="./about.html" class="mob-nav-popup__link mob-nav-popup__link--active">services</a>
-                </li>
-                <li class="mob-nav-popup__item">
-                    <a href="./team.html" class="mob-nav-popup__link">team</a>
-                </li>  
-                <li class="mob-nav-popup__item">
-                    <a href="./publications.html" class="mob-nav-popup__link">publications</a>
-                </li>  
-                <li class="mob-nav-popup__item">
-                    <a href="./contact.html" class="mob-nav-popup__link">contact</a>
-                </li>
-            </ul>
-        </nav>
+    <div class="popup-contact popup-contact--closed" id="popup-contact">
+        <div class="popup-contact__form " id="popup-contact__form">
+            <div class="popup-contact__header-form">
+                <h2 class="popup-contact__title">We would like to help you</h2>
+                <button type="button" id="close-popup-contact" class="popup-contact__close">
+                    <img src="../images/icons/Close.png" alt="mob-nav-popup__img">
+                </button>
+            </div>
+            <form action="https://fom.in.ua/echo" method="post" class="popup-contact__send-form">
+                <fieldset>
+                    <input type="text" name="name" class="popup-contact__name-input popup-contact__form--style"  placeholder="Name" >
+                    <textarea type="text" name="message" class="popup-contact__message-input popup-contact__form--style" placeholder="Message"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend class="popup-contact__question-text-form">How to answer you?</legend>
+                    <input type="tel" name="phone" class="popup-contact__phone-number-input popup-contact__form--style" placeholder="Phone number" required>
+                    <input type="email" name="email" class="popup-contact__email-input popup-contact__form--style" placeholder="Email" required>
+                </fieldset>  
+                <button type="submit" class="popup-contact__send-button">Send message</button>              
+            </form>
+        </div>
     </div>
-</div>
+    <div class="mob-nav-popup mob-nav-popup--closed" id="mob-nav-popup">
+        <div class="mob-nav-popup__card" id="mob-nav-card">
+            <button type="button" id="close-mob-nav" class="mob-nav-popup__close">
+                <img src="../images/icons/Close.png" alt="mob-nav-popup__img">
+            </button>
+            <nav class="mob-nav-popup__mab-nav">
+                <ul class="mob-nav-popup__items">
+                    <li class="mob-nav-popup__item">
+                        <a href="./about.html" class="mob-nav-popup__link">about us</a>
+                    </li>
+                    <li class="mob-nav-popup__item">
+                        <a href="./about.html" class="mob-nav-popup__link mob-nav-popup__link--active">services</a>
+                    </li>
+                    <li class="mob-nav-popup__item">
+                        <a href="./team.html" class="mob-nav-popup__link">team</a>
+                    </li>  
+                    <li class="mob-nav-popup__item">
+                        <a href="./publications.html" class="mob-nav-popup__link">publications</a>
+                    </li>  
+                    <li class="mob-nav-popup__item">
+                        <a href="./contact.html" class="mob-nav-popup__link">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 <script>
 
 const elipseElements = document.querySelectorAll('.team__elipse');
@@ -275,9 +297,13 @@ elipseElements.forEach((element) => {
 });
 
 const btn = document.querySelector('#close-mob-nav');
+const btnContact = document.querySelector('#close-popup-contact');
 const popup = document.querySelector('#mob-nav-popup');
+const popupContact = document.querySelector('#popup-contact');
 const btnOpen = document.querySelector('#hamburger-open')
+const btnOpenContact = document.querySelector('#contact-open')
 const navCard = document.querySelector('#mob-nav-card')
+const popupContactCard = document.querySelector('#popup-contact__form')
 
 btn.addEventListener('click',() => {
     popup.classList.add('mob-nav-popup--closed');
@@ -291,6 +317,18 @@ btnOpen.addEventListener('click',() => {
     }, 100);
 
 })
+
+btnOpenContact.addEventListener('click',() => {
+    popupContact.classList.remove('popup-contact--closed');
+    setTimeout(() => {
+        popupContactCard.classList.add('popup-contact__form--menu-open');
+    }, 100)
+})
+
+btnContact.addEventListener ('click', () => {
+    popupContact.classList.add('popup-contact--closed')
+    popupContactCard.classList.remove('popup-contact__form--menu-open');
+} )
 
 </script>
 </body>

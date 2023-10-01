@@ -63,6 +63,9 @@
 .company-advantage__item:not(:first-child) .company-advantage__link:hover{
     color: var.$color-current;
 }
+.company-advantage__item:last-child {
+    padding-right: 30px;
+}
 
 .company-advantage__link  {
     padding: 0;
@@ -121,6 +124,10 @@
        padding-left: 60px;
     }
 
+    .company-advantage__item:last-child {
+        padding-right: 60px;
+    }
+
     .company-advantage__list-items::-webkit-scrollbar-track {
         margin-left: 60px;
         margin-right: 60px;
@@ -153,7 +160,13 @@
         display: none;
     }
 
-    
+     .company-advantage__item:first-child  {
+       padding-left: 0px;
+    }
+
+    .company-advantage__item:last-child {
+        padding-right: 0px;
+    }
 
     .company-advantage__list {
         border-right: 4px solid rgba(255, 255, 255, 0.30);
