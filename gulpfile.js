@@ -66,6 +66,6 @@ gulp.task("push", () => {
     return gulpGit.push()
 })
 
-gulp.task("gh", gulp.series("add","commit","push"))
+gulp.task("gh", gulp.series("add", "commit", "push"))
 gulp.task("start", gulp.series("del", "css", "html", "copy", "watch"))
 gulp.task("build", gulp.series("del", "css", "html", "copy"))
