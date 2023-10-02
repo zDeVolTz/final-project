@@ -63,9 +63,21 @@ gulp.task("commit", () => {
 })
 
 gulp.task("push", () => {
-    return gulpGit.push()
+    return new Promise((resolve, reject) => {
+        gulpGit.push(null, "master", function(err) {
+            if (err) {
+                reject(err);
+            } else {
+                resolve();
+            }
+        });
+    });
+});
+
+gulp.task("gh-pages", () => {
+    return ghpages.publish('src')
 })
 
-gulp.task("gh", gulp.series("add", "commit", "push"))
+gulp.task("gh", gulp.series("add","commit","push","gh-pages"))
 gulp.task("start", gulp.series("del", "css", "html", "copy", "watch"))
 gulp.task("build", gulp.series("del", "css", "html", "copy"))
