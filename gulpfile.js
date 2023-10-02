@@ -64,7 +64,7 @@ gulp.task("commit", () => {
 
 gulp.task("push", () => {
     return new Promise((resolve, reject) => {
-        gulpGit.push( function(err) {
+        gulpGit.push(null, null, function(err) {
             if (err) {
                 reject(err);
             } else {
