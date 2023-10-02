@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as *;
+ 
+.services-img-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 94px;
+        height: 94px;
+        border-radius: 24px;
+        background-color: $btc-color-primary;
+
+    &__card-img {
+        display: block;
+        width: 64px;
+        height: 64px;
+    }
+}
