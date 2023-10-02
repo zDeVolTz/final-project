@@ -1,0 +1,376 @@
+@use "../abstracts/mixin" as mix;
+@use "../abstracts/maps" as maps;
+@use "sass:map";
+@use "../abstracts/variables" as var;
+
+.contact-and-nav{
+    &--desktop {
+        display: none;
+    }
+
+    &--pb {
+        padding-bottom: 60px;
+    }
+
+    &--pb-mobile{
+        padding-bottom: 30px;
+    }
+
+}
+
+
+
+.contact-and-nav__contact {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @include mix.wrapper-media(15px,15px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--dark {
+        background-color: var.$nav-bgc;
+    }
+}
+    
+    
+.contact-and-nav__lang-switch  {
+    font-size: 0;
+}
+
+.contact-and-nav__lang-link {
+    display: inline-block;
+    font-family: var.$font-family;
+    line-height: var.$line-height;
+    font-size: 12px;
+    font-weight: var.$font-weight-bold;
+    letter-spacing: 1px;
+    text-decoration: var.$text-direction-prymary;
+    padding: 5px 7px;
+
+    &--light{
+        color: var.$color-text-primary;
+
+        &:not(:last-child):hover {
+            border-radius: 8px;
+            background-color: var.$color-link-primary;
+        }
+    }
+
+    &--dark{
+        color: #B3B3BA;
+
+        &:not(:last-child):hover {
+            border-radius: 8px;
+            background-color: #F5F5FA;
+        }
+
+    }
+
+    &:last-child {
+        color: var.$color-text-primary;
+        border-radius: 8px;
+        background-color: var.$color-current;
+    }
+}
+
+.contact-and-nav__contact-phone {
+    text-decoration: var.$text-direction-prymary;
+    font-family: var.$font-family;
+    font-size: var.$font-size-default;
+    font-weight: var.$font-weight-bold;
+
+    &--light{
+        color: var.$color-text-primary;
+    }
+
+    &--dark{
+        color: #B3B3BA;
+    }
+} 
+
+
+.contact-and-nav__logo-menu {
+    @include mix.wrapper-media(15px,15px);
+    margin-top: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+} 
+
+.contact-and-nav__logo {
+    display: block;
+}
+
+.contact-and-nav__company-name-img {
+    width: 69px;
+    height: 32px;
+}
+
+.contact-and-nav__current-page {
+    display: flex;
+    align-items: center;
+    font-family: var.$font-family;
+    font-size: 20px;
+    font-weight: var.$font-weight-normal;
+
+    &--light{
+        color: var.$color-text-primary;
+    }
+
+    &--dark{
+        color: #323264;
+    }
+
+    &::before {
+        content: "/";
+        margin-left: 4px;
+        margin-right: 4px;
+        color: var.$color-current;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+}
+
+
+.contact-and-nav__logo-hamburger {
+    position: absolute;
+    right: 15px;
+    top: -4px;
+    display: block;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    margin-left: auto;
+    border: none;
+    background: none;
+
+    &:active{
+        border-radius: 8px;
+        background-color:#E6E6F0;
+    }
+    span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        
+        margin-top: 4px; 
+      }
+    
+    &--light span {
+        background-color: var.$btn-bct-light; 
+    }
+
+    &--dark span {
+        background-color: #323264;
+    }
+    
+    span:first-child {
+        margin-top: 0;
+    }
+    
+  }
+  
+@media (min-width : map.get(maps.$min-width, "tabletSD")) {
+
+    .contact-and-nav--mobile {
+        display: none;
+    }
+
+    .contact-and-nav--desktop {
+        display: block;
+    }
+
+    .contact-and-nav{
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 50px;
+    }
+
+   
+
+    .contact-and-nav__contact {
+        padding: 0px;
+        background: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .contact-and-nav--circle {
+        position: relative;
+    }
+        
+    .contact-and-nav--circle:not(:first-child){
+        margin-left: 18px;
+    }
+        
+    .contact-and-nav--circle:not(:last-child)::after {
+        font-size: 0;
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -9px;
+        transform: translate( 50%, -50%);
+        width: 6px;
+        height: 6px;
+        background-color: #E6E6F0;
+        overflow: hidden;
+        border-radius: 30px;
+        pointer-events: none;
+    }
+
+    .contact-and-nav__contact-address{
+        color:  #B3B3BA;
+        text-align: right;
+        font-family: "Montserrat",sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+
+    .contact-and-nav__facebook-contact {
+
+        display: block;
+      
+
+        &--dark svg path {
+            fill:rgba(179, 179, 186, 1);
+        }
+
+        
+        &:hover svg path {
+            fill: rgba(240, 20, 90, 1);
+        }
+        
+    }
+
+
+    .contact-and-nav__logo {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: inline-flex;
+        font-size: 0px;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    .contact-and-nav__current-page{
+        font-size: 36px;
+
+        &::before{
+            margin-left: 6px;
+            margin-right: 6px;
+            font-size: 47px;
+            font-weight: 700;
+        }
+    }
+
+    .contact-and-nav__company-name-img {
+        display: block;
+        width: 130px;
+        height: 60px;
+    }
+
+    .contact-and-nav__items {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .contact-and-nav__item {
+        margin-left: 15px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    .contact-and-nav__link {
+        text-decoration: none;
+        font-family: var.$font-family;
+        font-size: var.$font-size-default;
+        font-weight: var.$font-weight-bold;
+        line-height: var.$line-height;
+        border-bottom: 2px solid rgba($color: #ffffff, $alpha: 0);
+        
+       
+
+        &--active {
+            color: var.$color-current;
+            border-color: var.$color-current;
+            &:hover {
+                border-color: var.$color-current;
+            }
+        }
+
+        &--light {
+            color: var.$color-text-primary;
+
+            &:hover {
+                border-bottom: 2px solid #FFFFFF;
+            }
+        }
+
+        &--dark {
+            color: #24A3FF;
+            &:hover {
+                border-bottom: 2px solid #24A3FF;
+            }
+        }
+    }  
+}
+
+
+
+
+
+@media (min-width : map.get(maps.$min-width, "tabletHD")) {
+    
+    .contact-and-nav__logo-nav {
+        padding: 0;
+        position: relative;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .contact-and-nav__contact {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .contact-and-nav__logo {
+        margin: 0;
+        position: absolute;
+        left:0;
+        top: 0;
+    }
+
+    .contact-and-nav__items {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 16px;
+    } 
+
+}
+
+@media (min-width : map.get(maps.$min-width, "desktopHD")) {
+
+    .contact-and-nav{
+        width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+   
+}
+  
+  
+  
+  
+  
+
