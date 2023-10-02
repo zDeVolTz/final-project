@@ -1,0 +1,62 @@
+$card-pride-width: (
+    "mob": 100%,
+    "tabletSD": 45%,
+    "tabletHD": 28.9%,
+    "desktopSD": 30.2%,
+    "desktopHD": 30.8%
+);
+
+$min-width: (
+    "mob" : 375px,
+    "tabletSD" : 768px,
+    "tabletHD": 1024px,
+    "desktopSD": 1440px,
+    "desktopHD": 1920px
+);
+
+$width-partner-cards: (
+    "mob" : 100%,
+    "tabletSD" : 100%,
+    "tabletHD": 100%,
+    "desktopSD": 100%,
+    "desktopHD": 1720px
+);
+
+$width-partner-card: (
+    "mob" : 100%,
+    "tabletSD" : 33.3%,
+    "tabletHD": 25%,
+    "desktopSD": 25%,
+    "desktopHD": 25%
+);
+
+$partner-url: (
+    "Hillel" : "../images/Hillel-Logo-OneLine-White-Uk.png",
+    "WannaBiz" : "../images/WannaBiz.png",
+    "Tapgerine" : "../images/tapgerine.png",
+    "3D-Look" : "../images/3D-LOOK.png",
+    "Orangear" : "../images/orangear.png",
+    "Atelligent" : "../images/adtellingent.png",
+    "Clickky" : "../images/Clickky.png",
+    "Ecolease" : "../images/ecolease.png",
+    "Ifra-Tek" : "../images/Ifra-Tek.png",
+    "City-Garden" : "../images/City-garden.png",
+    "Art-print" : "../images/art-print.png",
+    "UltimeCard" : "../images/UltimeCard.png"
+);
+
+$partner-url-webp: (
+    "Hillel" : "../images/Hillel-Logo-OneLine-White-Uk.webp",
+    "WannaBiz" : "../images/WannaBiz.webp",
+    "Tapgerine" : "../images/tapgerine.webp",
+    "3D-Look" : "../images/3D-LOOK.webp",
+    "Orangear" : "../images/orangear.webp",
+    "Atelligent" : "../images/adtellingent.webp",
+    "Clickky" : "../images/Clickky.webp",
+    "Ecolease" : "../images/ecolease.webp",
+    "Ifra-Tek" : "../images/Ifra-Tek.webp",
+    "City-Garden" : "../images/City-garden.webp",
+    "Art-print" : "../images/art-print.webp",
+    "UltimeCard" : "../images/UltimeCard.webp"
+);
+

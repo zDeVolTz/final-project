@@ -45,9 +45,13 @@ gulp.task('watch', () => {
     gulp.watch('./src/**/*.html', gulp.series('html'));
 })
 
-gulp.task("publish", () => {
+gulp.task("add", () => {
     return gulp.src(".")
     .pipe(gulpGit.add())
+})
+
+gulp.task("commit", () => {
+    return gulp.src(".")
     .pipe(prompt.prompt({
         type: 'input',
         name: 'commitMessage',
@@ -58,7 +62,10 @@ gulp.task("publish", () => {
     }));
 })
 
+gulp.task("push", () => {
+    return gulpGit.push()
+})
 
-gulp.task("gh", gulp.series("publish"))
+gulp.task("gh", gulp.series("add","commit","push"))
 gulp.task("start", gulp.series("del", "css", "html", "copy", "watch"))
 gulp.task("build", gulp.series("del", "css", "html", "copy"))

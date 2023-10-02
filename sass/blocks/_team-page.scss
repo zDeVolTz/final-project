@@ -1,0 +1,93 @@
+@use "../abstracts/maps" as maps;
+@use "sass:map";
+@use "../abstracts/variables" as *;
+
+.team-page {
+    padding-bottom: 60px;
+    padding-top: 30px;
+    &__cards{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__card {
+        flex: 1;
+        display: block;
+        min-width: 100%
+    }
+
+    &__card-img{
+        display: block;
+        width: 100%;
+        min-height: 300px;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    &__content{
+        margin-top: 15px;
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__title{
+        display: block;
+        color: #323264;
+        font-family: $font-family;
+        font-size: $font-size-default;
+        font-weight: $font-weight-bold;
+        line-height: $line-height;
+        margin-bottom: 5px;
+        text-decoration: none;
+
+        &:hover{
+            color: $color-current;
+        }
+    }
+
+    &__subtitle{
+        display: block;
+        color: var(--grey-text, #B3B3BA);
+        font-family: $font-family;
+        font-size: 14px;
+        font-weight: $font-weight-normal;
+        line-height: 22px;
+    }
+
+    &__button{
+        display: flex;
+        font-size: 0;
+        border: none;
+        padding: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        background: none;
+        &:hover circle {
+            fill: rgba(237, 237, 247, 1);
+        }
+        &:hover path {
+            stroke:rgba(240, 20, 90, 1);
+        }
+    }
+
+}
+
+@media (min-width : map.get(maps.$min-width, "tabletSD")) {
+
+    .team-page__card {
+        min-width: calc(50% - 30px);
+    }
+}
+
+
+@media (min-width : map.get(maps.$min-width, "tabletHD")) {
+    .team-page__card {
+        min-width: calc(33.3% - 30px);
+    }
+}
