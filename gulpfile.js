@@ -75,7 +75,15 @@ gulp.task("push", () => {
 });
 
 gulp.task("gh-pages", () => {
-    return ghpages.publish('src')
+    return new Promise((resolve, reject) => {
+        ghpages.publish('src', function(err) {
+            if (err) {
+                reject(err);
+            } else {
+                resolve();
+            }
+        });
+    });
 })
 
 gulp.task("gh", gulp.series("add","commit","push","gh-pages"))
