@@ -9,6 +9,8 @@ import htmlmin from 'gulp-htmlmin';
 import ghpages from 'gh-pages';
 import gulpGit from 'gulp-git';
 import prompt from 'gulp-prompt';
+import GulpCleanCss from 'gulp-clean-css';
+import sourcemaps from 'gulp-sourcemaps';
 const sass = gulpSass(dartSass);
 const del = await deleteAsync;
 
@@ -18,7 +20,10 @@ gulp.task('css', () => {
         .pipe(sass())
         .pipe(postcss([ autoprefixer() ]))
         .pipe(gulp.dest("./src/styles"))
+        .pipe(sourcemaps.init())
+        .pipe(GulpCleanCss())
         .pipe(csso())
+        .pipe(sourcemaps.write("./"))
         .pipe(gulp.dest("./build/styles"))
 })
 
