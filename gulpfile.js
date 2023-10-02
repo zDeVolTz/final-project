@@ -6,6 +6,9 @@ import csso from 'gulp-csso';
 import autoprefixer from 'autoprefixer';
 import postcss from 'gulp-postcss';
 import htmlmin from 'gulp-htmlmin';
+import ghpages from 'gh-pages';
+import gulpGit from 'gulp-git';
+import prompt from 'gulp-prompt';
 const sass = gulpSass(dartSass);
 const del = await deleteAsync;
 
@@ -42,5 +45,20 @@ gulp.task('watch', () => {
     gulp.watch('./src/**/*.html', gulp.series('html'));
 })
 
+gulp.task("publish", () => {
+    return gulp.src(".")
+    .pipe(gulpGit.add())
+    .pipe(prompt.prompt({
+        type: 'input',
+        name: 'commitMessage',
+        message: 'Введите комментарий для коммита:'
+    }, function(res) {
+        return gulp.src('.')
+            .pipe(gulpGit.commit(res.commitMessage));
+    }));
+})
+
+
+gulp.task("gh", gulp.series("publish"))
 gulp.task("start", gulp.series("del", "css", "html", "copy", "watch"))
 gulp.task("build", gulp.series("del", "css", "html", "copy"))
