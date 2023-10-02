@@ -68,14 +68,12 @@ gulp.task("commit", () => {
 })
 
 gulp.task("push", (done) => {
-    return new Promise((resolve, reject) => {
-        gulpGit.push(null, null, function(err) {
-            if (err) {
-                done(err);
-            } else {
-                done();
-            }
-        });
+    gulpGit.push(null, null, function(err) {
+        if (err) {
+            done(err);
+        } else {
+            done();
+        }
     });
 });
 
