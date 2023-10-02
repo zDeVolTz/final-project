@@ -7,13 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp start",
     "build": "gulp build",
-    "gh": "gulp gh"
+    "gh": "gulp gh",
+    "report": "gulp report"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.4.16",
+    "cheerio": "^1.0.0-rc.12",
+    "chrome-launcher": "^1.0.0",
     "del": "^7.1.0",
+    "fs": "^0.0.1-security",
     "gh-pages": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
@@ -24,7 +28,10 @@
     "gulp-prompt": "^1.2.0",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
+    "lighthouse": "10",
+    "node-fetch": "^3.3.2",
     "postcss": "^8.4.31",
+    "puppeteer": "^21.3.6",
     "sass": "^1.68.0"
   },
   "type": "module",
