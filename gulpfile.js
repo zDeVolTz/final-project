@@ -75,8 +75,8 @@ gulp.task("commit", () => {
     }));
 })
 
-gulp.task("push", (done) => {
-    gulpGit.push(null, null, function(err) {
+gulp.task("push", async (done) => {
+    await gulpGit.push(null, null, function(err) {
         if (err) {
             done(err);
         } else {
@@ -272,9 +272,7 @@ gulp.task('lighthouseR', async () => {
 });
 
 
-
 gulp.task('report', gulp.series('URLs','lighthouseR'));
-
 gulp.task("gh", gulp.series("add","commit","push","gh-pages"))
 gulp.task("start", gulp.series("del", "css", "html", "copy", "watch"))
 gulp.task("build", gulp.series("del", "css", "html", "copy"))
